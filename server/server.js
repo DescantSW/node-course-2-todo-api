@@ -33,3 +33,5 @@ app.listen(3000, () => {
 
 
 // mongoose.connection.close()
+
+module.exports = { app }
