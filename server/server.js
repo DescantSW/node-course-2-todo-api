@@ -53,7 +53,8 @@ app.delete('/todos/:id', (req, res) => {
 		return res.status(404).send()
 	}
 
-	Todo.findByIdAndRemove(id).then(todo => {
+	// Todo.findByIdAndRemove(id).then(todo => {	// remove is deprecated
+	Todo.findOneAndDelete({_id: id}).then(todo => {
 		if(!todo) {
 			res.status(404).send()
 		}
