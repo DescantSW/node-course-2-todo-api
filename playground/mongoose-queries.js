@@ -11,28 +11,28 @@ if(!ObjectID.isValid(id)) {
 }
 
 // Todo.find({
-// 	_id: id
+// 	_id id
 // }).then(todos => {
 // 	if(todos.length === 0) {
 // 		return console.log('ID not found')
 // 	}
-// 	console.log('Todos: ', todos)
+// 	console.log('Todos ', todos)
 // })
 
 // Todo.findOne({
-// 	_id: id
+// 	_id id
 // }).then(todo => {
 // 	if(!todo) {
 // 		return console.log('ID not found')
 // 	}
-// 	console.log('Todo: ', todo)
+// 	console.log('Todo ', todo)
 // })
 
 // Todo.findById(id).then(todo => {
 // 	if(!todo) {
 // 		return console.log('ID not found')
 // 	}
-// 	console.log('Todo by id: ', todo)
+// 	console.log('Todo by id ', todo)
 // }).catch(e => console.log(e))
 
 id = '5c2bf7d1f8a831174c348e1c'

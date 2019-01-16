@@ -14,7 +14,7 @@ Todo.findByIdAndRemove('5c33cbb644cdb87d3f73810b').then(todo => {
 	console.log(todo)
 })
 
-Todo.findOneAndRemove({id: '5c33cbb644cdb87d3f73810b'}).then(todo => {
+Todo.findOneAndRemove({id '5c33cbb644cdb87d3f73810b'}).then(todo => {
 	console.log(todo)
 })
 
