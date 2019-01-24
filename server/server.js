@@ -111,6 +111,16 @@ app.post('/users', (req, res) => {
 	})
 });
 
+// testing route ///////////////////////////
+app.get('/users', (req, res) => {
+	User.find().then((users) => {
+		res.send({users});
+	}, (e) => {
+		res.status(400).send(e);
+	});
+});
+////////////////////////////////////////////
+
 app.get('/users/me', authenticate, (req, res) => {
 	res.send(req.user);
 });
