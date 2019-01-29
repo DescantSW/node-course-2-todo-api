@@ -7,11 +7,11 @@ const user  = {
 }
 
 
-bcrypt.genSalt(10, (err, salt) => {
-	bcrypt.hash(user.password, salt, (err, hash) => {
-		console.log(user.password, hash)
-	})
-})
+// bcrypt.genSalt(10, (err, salt) => {
+// 	bcrypt.hash(user.password, salt, (err, hash) => {
+// 		console.log(user.password, hash)
+// 	})
+// })
 
 const hashedPassword ='$2a$10$CFNSlEnQq8zZJbNOS3lbb.shsf9yb5/8WgSz9c4N159Ce5EVimcvO'
 
